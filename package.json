@@ -1,12 +1,20 @@
 {
   "name": "vue-data-count",
+  "description": "A simple vue data count",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "repository": "https://github.com/SamjuTheCoder/vue-data-count",
+  "bugs": "https://github.com/SamjuTheCoder/vue-data-count/issues",
+  "keywords": ["data count", "vue", "javascript"],
+  "license": "MIT",
+  "files": [ "dist/"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library" : "vue-cli-service build --target lib --name vue-data-count ./src/install.js",
     "lint": "vue-cli-service lint"
   },
+  "main" : "dist/vue-data-count.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
